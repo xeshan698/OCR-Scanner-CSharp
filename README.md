@@ -40,6 +40,8 @@ Add the following controls to Form1, which is the main form:
 
 The form on execution looks like this:
 
+![OCR Scanner Application](OCRScanner/images/OCR%20Scanner%20Application.png)
+
 #### Add Controls to CameraForm
 
 Add the following controls to CameraForm:
@@ -52,9 +54,13 @@ Add the following controls to CameraForm:
 
 The form looks like this:
 
+![Camera Form](OCRScanner/images/Camera%20Form.png)
+
 #### Image Files
 
 This application will be able to open multiple image formats (.jpg, .jpeg, .png, .gif, .bmp, .ico). Here is the sample image used:
+
+![Input Image](OCRScanner/images/Image.png)
 
 ### Step 4: Add Methods to Select Image File and Open Camera
 
@@ -127,6 +133,8 @@ This code allows users to select an image, perform OCR using tesseract OCR engin
 - **Convert to Text:** When the "Convert to Text" button (**btnConvertToText**) is clicked, OCR is performed on the selected image. It uses the [IronTesseract](https://ironsoftware.com/csharp/ocr/tutorials/c-sharp-tesseract-ocr/) method from **Iron OCR** library to recognize text in the image. The recognized text is displayed in the **outputTextBox**. Optional filters like **denoising** and **deskewing** can also be used to correct low quality scans or if image is tilted.
 
 - **Open Camera:** When the "Open Camera" button (**btnOpenCamera**) is clicked, it opens a new form (**CameraForm**) that presumably allows for camera capture. The ShowDialog method is used to show the camera form as a dialog.
+
+![Scan From Image](OCRScanner/images/ScanFromImage.png)
 
 ### Step 5: Initiate Camera and Capture Frame as Image for OCR
 
@@ -222,6 +230,8 @@ This code helps in real-time camera video capture and OCR text recognition, allo
 - **Text Conversion:** When a button (**btnConvertToText**) is clicked, OCR is performed on the displayed image. The **IronTesseract** method of IronOCR .NET library is used to recognize text in the image. The OCR result is displayed in a (**outputTextBox**) RichTextBox.
 
 - **Closing the Application:** When the form is closing, resources are released. The camera capture is released, and the **frame** object is disposed of.
+
+![Scan From Camera](OCRScanner/images/ScanFromCamera.png)
 
 ## Conclusion
 
